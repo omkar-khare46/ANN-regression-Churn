@@ -2,11 +2,12 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import tensorflow
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 import pickle
 
 ##Load the trained model
-model = tf.keras.models.load_model('regression_model.h5')
+model = tensorflowf.keras.models.load_model('regression_model.h5')
 
 ## load encoder and scaler files
 with open('label_encoder_gender.pkl', 'rb') as file:
